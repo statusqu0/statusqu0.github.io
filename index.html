@@ -17,11 +17,11 @@
 <body>
   <div class="intro-splash" data-splash>
     <div class="intro-splash__media">
-      <img src="assets/img/intro-splash.jpg" alt="Robotic explorer standing in a sunlit field with a spaceship behind.">
+      <img src="assets/img/intro-splash.jpg" alt="Robotic explorer standing in a sunlit field with a spaceship behind." loading="eager">
     </div>
     <div class="intro-splash__shade"></div>
-    <div class="intro-splash__badge glass">
-      <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait">
+    <div class="intro-splash__badge glass" data-delay="0" data-reveal="up">
+      <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait" loading="eager">
       <span>Loading mastery...</span>
     </div>
   </div>
@@ -34,9 +34,9 @@
   </div>
 
   <header class="site-header" id="top">
-    <a class="logo" href="#hero" aria-label="Statusqu0 home">
+    <a class="logo" href="#hero" aria-label="Statusqu0 home" data-delay="0" data-reveal="up">
       <span class="logo__mark">
-        <img src="assets/img/profile.jpg" alt="statusqu0 logo">
+        <img src="assets/img/profile.jpg" alt="statusqu0 logo" loading="lazy" decoding="async">
       </span>
       statusqu0
     </a>
@@ -56,33 +56,33 @@
   <main>
     <section id="hero" class="panel hero">
       <div class="hero__content">
-        <div class="hero__identity">
+        <div class="hero__identity" data-delay="0.05" data-reveal="up">
           <span class="hero__eyebrow">Digital goods of highest quality</span>
           <div class="hero__avatar glass">
-            <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait">
+            <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait" loading="lazy" decoding="async">
           </div>
         </div>
-        <h1>Mastery in motion.</h1>
-        <p>I'm Statusqu0 - an indie 3D artist forging lush worlds, tactile props, and cinematic drops. I started crafting my own universes at 14, and never stopped pushing materials, light, and mood to feel lived-in.</p>
-        <div class="hero__actions">
+        <h1 data-delay="0.1" data-reveal="up">Mastery in motion.</h1>
+        <p data-delay="0.15" data-reveal="up">I'm Statusqu0 - an indie 3D artist forging lush worlds, tactile props, and cinematic drops. I started crafting my own universes at 14, and never stopped pushing materials, light, and mood to feel lived-in.</p>
+        <div class="hero__actions" data-delay="0.2" data-reveal="up">
           <a class="button primary" href="https://sketchfab.com/statusqu0">View Sketchfab</a>
           <a class="button ghost" href="#contact">Start a collaboration</a>
         </div>
-        <div class="hero__meta">
+        <div class="hero__meta" data-delay="0.26" data-reveal="up">
           <span>Real time &bull; PBR textures &bull; Game ready</span>
           <span>Hard surface focus &bull; Solo drops</span>
         </div>
       </div>
       <div class="hero__preview" role="presentation">
-        <div class="orbit">
+        <div class="orbit" aria-hidden="true">
           <div class="orb orb--primary"></div>
           <div class="orb orb--secondary"></div>
           <div class="orb orb--tertiary"></div>
         </div>
-        <div class="profile-frame glass">
-          <img src="assets/img/coral-awp.jpg" alt="Coral AWP render portrait">
+        <div class="profile-frame glass" data-delay="0.14" data-reveal="scale">
+          <img src="assets/img/coral-awp.jpg" alt="Coral AWP render portrait" loading="lazy" decoding="async">
         </div>
-        <div class="profile-chip glass">
+        <div class="profile-chip glass" data-delay="0.24" data-reveal="up">
           <span class="label">Latest skin</span>
           <strong>Coral AWP</strong>
           <p>Cinematic weapon finish with organic detail.</p>
@@ -91,15 +91,15 @@
     </section>
 
     <section id="work" class="panel section">
-      <div class="section__heading">
+      <div class="section__heading" data-delay="0" data-reveal="up">
         <span class="section__eyebrow">Selected work</span>
         <h2>Signature drops &amp; props</h2>
         <p>Small batch releases engineered for mood and precision. Click any render for the full HD experience.</p>
       </div>
       <div class="card-grid">
-        <article class="case-card glass" data-delay="0" data-direction="left">
+        <article class="case-card glass" data-delay="0" data-reveal="left">
           <button type="button" class="case-card__media" data-modal-open data-modal-image="assets/img/coral-awp.jpg" data-modal-title="Coral AWP" data-modal-description="Cinematic weapon skin with coral bloom, subsurface shimmer, and deep sea grime.">
-            <img src="assets/img/coral-awp.jpg" alt="Coral AWP render preview">
+            <img src="assets/img/coral-awp.jpg" alt="Coral AWP render preview" loading="lazy" decoding="async">
             <span class="case-card__hint">Open full render</span>
           </button>
           <span class="case-card__tag">Signature skin</span>
@@ -107,9 +107,9 @@
           <p>Organic coral growth meets competition-grade metalwork, balancing sharp silhouettes with soft light falloff.</p>
           <a class="case-card__link" href="https://sketchfab.com/statusqu0">Sketchfab portfolio</a>
         </article>
-        <article class="case-card glass" data-delay="0.05" data-direction="right">
+        <article class="case-card glass" data-delay="0.06" data-reveal="right">
           <button type="button" class="case-card__media" data-modal-open data-modal-image="assets/img/sakura-kunai.jpg" data-modal-title="Sakura Kunai" data-modal-description="Hand-forged kunai with sakura enamel, layered lacquer, and expressive lighting.">
-            <img src="assets/img/sakura-kunai.jpg" alt="Sakura Kunai render preview">
+            <img src="assets/img/sakura-kunai.jpg" alt="Sakura Kunai render preview" loading="lazy" decoding="async">
             <span class="case-card__hint">Open full render</span>
           </button>
           <span class="case-card__tag">Limited blade</span>
@@ -117,9 +117,9 @@
           <p>Delicate blossoms and lacquered steel collide, capturing motion, patina, and hand-crafted asymmetry.</p>
           <a class="case-card__link" href="https://sketchfab.com/statusqu0">Sketchfab portfolio</a>
         </article>
-        <article class="case-card glass" data-delay="0.1" data-direction="left">
+        <article class="case-card glass" data-delay="0.12" data-reveal="left">
           <button type="button" class="case-card__media" data-modal-open data-modal-image="assets/img/racer.jpg" data-modal-title="Racer" data-modal-description="High-speed racing concept with aerodynamic surfacing and studio-grade reflections.">
-            <img src="assets/img/racer.jpg" alt="Racer concept render preview">
+            <img src="assets/img/racer.jpg" alt="Racer concept render preview" loading="lazy" decoding="async">
             <span class="case-card__hint">Open full render</span>
           </button>
           <span class="case-card__tag">Vehicle concept</span>
@@ -131,10 +131,10 @@
     </section>
 
     <section id="spotlight" class="panel section spotlight">
-      <div class="spotlight__media glass">
-        <img src="assets/img/ultra-render.jpg" alt="Ultra realistic render of a futuristic device by Statusqu0">
+      <div class="spotlight__media glass" data-delay="0.08" data-reveal="left">
+        <img src="assets/img/ultra-render.jpg" alt="Ultra realistic render of a futuristic device by Statusqu0" loading="lazy" decoding="async">
       </div>
-      <div class="spotlight__copy">
+      <div class="spotlight__copy" data-delay="0.16" data-reveal="right">
         <span class="section__eyebrow">Spotlight render</span>
         <h2>Atmosphere, grit, and glow</h2>
         <p>Each render is an exploration in warm light, cinematic grime, and layered storytelling. This study fuses precise bevels with atmospheric bloom to land a photoreal finish that still feels indie.</p>
@@ -142,20 +142,20 @@
     </section>
 
     <section id="about" class="panel section">
-      <div class="section__heading">
+      <div class="section__heading" data-delay="0" data-reveal="up">
         <span class="section__eyebrow">Behind the work</span>
         <h2>Self-taught since 14</h2>
       </div>
       <div class="about__grid">
-        <p class="lead">What started as late-night worldbuilding in my teens evolved into a craft of shipping digital goods that feel tangible. I chase believable lighting, tactile surfaces, and the sense that a scene already has stories baked in.</p>
-        <div class="about__profile glass">
-          <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait">
+        <p class="lead" data-delay="0.05" data-reveal="up">What started as late-night worldbuilding in my teens evolved into a craft of shipping digital goods that feel tangible. I chase believable lighting, tactile surfaces, and the sense that a scene already has stories baked in.</p>
+        <div class="about__profile glass" data-delay="0.1" data-reveal="left">
+          <img src="assets/img/profile.jpg" alt="statusqu0 profile portrait" loading="lazy" decoding="async">
           <div class="about__profile-copy">
             <strong>statusqu0</strong>
             <span>Realtime artist and world builder</span>
           </div>
         </div>
-        <ul class="about__list">
+        <ul class="about__list" data-delay="0.18" data-reveal="up">
           <li><strong>Toolset:</strong> Blender, Substance 3D, Houdini, Unreal Engine, Marmoset.</li>
           <li><strong>Focus:</strong> Look dev, realtime optimization, narrative props, presentation packs.</li>
           <li><strong>Credo:</strong> Less noise, more intention. Every asset earns its place.</li>
@@ -164,22 +164,22 @@
     </section>
 
     <section id="approach" class="panel section">
-      <div class="section__heading">
+      <div class="section__heading" data-delay="0" data-reveal="up">
         <span class="section__eyebrow">Approach</span>
         <h2>Minimal friction, maximal polish</h2>
       </div>
       <div class="steps">
-        <article class="step glass" data-delay="0">
+        <article class="step glass" data-delay="0" data-reveal="up">
           <span class="step__number">01</span>
           <h3>Frame the vibe</h3>
           <p>We co-create a tight brief - moodboards, palette pulls, and storytelling beats to nail the direction early.</p>
         </article>
-        <article class="step glass" data-delay="0.05">
+        <article class="step glass" data-delay="0.06" data-reveal="up">
           <span class="step__number">02</span>
           <h3>Iterate with feel</h3>
           <p>Modeling, texturing, and lighting passes stay nimble, with quick look-dev drops to keep the momentum sharp.</p>
         </article>
-        <article class="step glass" data-delay="0.1">
+        <article class="step glass" data-delay="0.12" data-reveal="up">
           <span class="step__number">03</span>
           <h3>Deliver the wow</h3>
           <p>You get final renders, realtime-ready files, and presentation kits tuned for your platform of choice.</p>
@@ -188,12 +188,12 @@
     </section>
 
     <section id="contact" class="panel section contact">
-      <div class="section__heading">
+      <div class="section__heading" data-delay="0" data-reveal="up">
         <span class="section__eyebrow">Available for new work</span>
         <h2>Let's build your next drop</h2>
         <p>Tell me about the world you want to create. I'll bring mood, motion, and cinematic finish.</p>
       </div>
-      <div class="contact__actions">
+      <div class="contact__actions" data-delay="0.05" data-reveal="up">
         <button class="button primary" type="button" data-email-trigger>Email statusqu0</button>
         <a class="button ghost" href="https://sketchfab.com/statusqu0">Sketchfab portfolio</a>
       </div>

@@ -32,11 +32,20 @@ if (navToggle && siteNav) {
 const motionOK = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
 if (motionOK) {
-  const revealables = document.querySelectorAll('[data-delay]');
+  const revealables = Array.from(
+    new Set(
+      Array.from(document.querySelectorAll('[data-delay], [data-reveal]'))
+    )
+  );
 
   revealables.forEach((element) => {
-    const delay = Number(element.dataset.delay || 0);
-    element.style.transitionDelay = String(Math.max(delay, 0)) + 's';
+    const rawDelay = element.dataset.delay;
+    if (rawDelay !== undefined) {
+      const delay = Number(rawDelay);
+      if (!Number.isNaN(delay)) {
+        element.style.transitionDelay = String(Math.max(delay, 0)) + 's';
+      }
+    }
   });
 
   const observer = new IntersectionObserver(
@@ -50,7 +59,7 @@ if (motionOK) {
     },
     {
       rootMargin: '0px 0px -18%',
-      threshold: 0.25,
+      threshold: 0.2,
     }
   );
 
